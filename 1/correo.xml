@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<correos>
+    <correo importante="true">
+        <emailDestinario>max123@gmail.com</emailDestinario>
+        <emailOrigen>origen@gmail.com</emailOrigen>
+        <fechaYHora>2022-05-27T11:19:00</fechaYHora>
+        <asunto>Titulo</asunto>
+        <texto>Algún texto</texto>
+    </correo>
+</correos>

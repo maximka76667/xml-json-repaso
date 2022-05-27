@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT informacionLigas (ligas, equipos) >
+
+<!-- Ligas -->
+<!ELEMENT ligas (liga+)>
+
+<!-- Liga -->
+<!ELEMENT liga (equiposParticipantes, jornadas) >
+<!ATTLIST liga 
+    id ID #REQUIRED 
+    nombre CDATA #REQUIRED
+>
+
+<!ELEMENT equiposParticipantes (equipoParticipante+) >
+<!ELEMENT equipoParticipante EMPTY >
+<!ATTLIST equipoParticipante
+    id IDREF #REQUIRED
+>
+
+<!-- Jornadas -->
+<!ELEMENT jornadas (jornada+) >
+<!ELEMENT jornada (equipo1, equipo2) >
+<!ATTLIST jornada 
+    id ID #REQUIRED
+    fecha CDATA #REQUIRED
+    hora CDATA #REQUIRED
+>
+
+<!ELEMENT equipo1 EMPTY >
+<!ATTLIST equipo1 
+    id IDREF #REQUIRED 
+>
+
+<!ELEMENT equipo2 EMPTY >
+<!ATTLIST equipo2 
+    id IDREF #REQUIRED 
+>
+
+<!-- Equipos -->
+<!ELEMENT equipos (equipo+) >
+
+<!-- Equipo -->
+<!ELEMENT equipo (presupuesto, puntosActuales) >
+<!ATTLIST equipo 
+    id ID #REQUIRED 
+    nombre CDATA #REQUIRED
+>
+
+<!ELEMENT presupuesto (cantidad) >
+<!ATTLIST presupuesto 
+    tipo (alto | medio | bajo) #REQUIRED 
+>
+<!ELEMENT cantidad (#PCDATA) >
+
+<!ELEMENT puntosActuales (partidosGanados?, empatados?, perdidos?, golesAFavor?, enContra?) >

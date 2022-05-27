@@ -1,0 +1,32 @@
+1.
+/lugares/provincias/provincia/@codigo
+
+2.
+/lugares/provincias/provincia/nome
+
+3.
+/lugares/*/*/nome
+
+4.
+/lugares/localidades/localidade[@cod_provincia = 27]
+
+5.
+/lugares/localidades/localidade[habitantes > 16000]/@codigo
+
+6.
+/lugares/localidades/localidade[@cod_provincia = 36 and @costa = "N"]
+
+7.
+/lugares/*/*[nome = "Lugo"]
+
+8.
+/lugares/provincias/provincia 
+| /lugares/localidades/localidade[@codigo = /lugares/provincias/provincia/capital]
+
+9.
+/lugares/localidades/localidade[last() - 1]
+
+10.
+sum(/lugares/provincias/provincia/habitantes)
+div
+count(/lugares/provincias/provincia/habitantes)

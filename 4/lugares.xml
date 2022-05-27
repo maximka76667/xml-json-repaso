@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lugares>
+  <provincias>
+	<provincia codigo="15" costa="S">
+		<nome>A Coruña</nome>
+		<extensión>7951</extensión>
+		<habitantes>1147124</habitantes>
+		<capital>15001</capital>
+	</provincia>
+	<provincia codigo="27" costa="S">
+		<nome>Lugo</nome>
+		<extensión>9856</extensión>
+		<habitantes>351350</habitantes>
+		<capital>27001</capital>
+	</provincia>
+	<provincia codigo="32" costa="N">
+		<nome>Ourense</nome>
+		<extensión>7273</extensión>
+		<habitantes>333257</habitantes>
+		<capital>32001</capital>
+	</provincia>
+	<provincia codigo="36" costa="S">
+		<nome>Pontevedra</nome>
+		<extensión>4495</extensión>
+		<habitantes>963511</habitantes>
+		<capital>36001</capital>
+	</provincia>
+  </provincias>
+  <localidades>
+	<localidade codigo="27001" costa="N" cod_provincia="27">
+		<nome>Lugo</nome>
+		<habitantes>98007</habitantes>
+	</localidade>
+	<localidade codigo="27002" costa="N" cod_provincia="27">
+		<nome>Monforte de Lemos</nome>
+		<habitantes>19638</habitantes>
+	</localidade>
+	<localidade codigo="27003" costa="S" cod_provincia="27">
+		<nome>Viveiro</nome>
+		<habitantes>16211</habitantes>
+	</localidade>
+	<localidade codigo="27004" costa="S" cod_provincia="27">
+		<nome>Ribadeo</nome>
+		<habitantes>10023</habitantes>
+	</localidade>
+	<localidade codigo="36001" costa="S" cod_provincia="36">
+		<nome>Pontevedra</nome>
+		<habitantes>82400</habitantes>
+	</localidade>
+	<localidade codigo="36002" costa="S" cod_provincia="36">
+		<nome>Vigo</nome>
+		<habitantes>297241</habitantes>
+	</localidade>
+	<localidade codigo="36005" costa="S" cod_provincia="36">
+		<nome>Marín</nome>
+		<habitantes>25864</habitantes>
+	</localidade>
+	<localidade codigo="36007" costa="N" cod_provincia="36">
+		<nome>A Estrada</nome>
+		<habitantes>21759</habitantes>
+	</localidade>
+	<localidade codigo="36008" costa="S" cod_provincia="36">
+		<nome>Baiona</nome>
+		<habitantes>11839</habitantes>
+	</localidade>
+	<localidade codigo="36009" costa="S" cod_provincia="36">
+		<nome>Panxón</nome>
+		<habitantes>3966</habitantes>
+	</localidade>
+	<localidade codigo="15001" costa="S" cod_provincia="15">
+		<nome>A Coruña</nome>
+		<habitantes>246028</habitantes>
+	</localidade>
+	<localidade codigo="15002" costa="N" cod_provincia="15">
+		<nome>Santiago de Compostela</nome>
+		<habitantes>95207</habitantes>
+	</localidade>
+	<localidade codigo="32001" costa="N" cod_provincia="32">
+		<nome>Ourense</nome>
+		<habitantes>108002</habitantes>
+	</localidade>
+	</localidades>
+</lugares>
+

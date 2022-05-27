@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE informacionLigas SYSTEM "ligas.dtd" >
+
+<informacionLigas>
+    <ligas>
+        <liga id="UCL" nombre="UCL">
+            <equiposParticipantes>
+                <equipoParticipante id="FCB"/>
+                <equipoParticipante id="RM"/>
+            </equiposParticipantes>
+            <jornadas>
+                <jornada id="x135gx" fecha="" hora="">
+                    <equipo1 id="FCB"/>
+                    <equipo2 id="RM"/>
+                </jornada>
+            </jornadas>
+        </liga>
+    </ligas>
+    <equipos>
+        <equipo id="FCB" nombre="Barcelona">
+            <presupuesto tipo="alto">
+                <cantidad></cantidad>
+            </presupuesto>
+            <puntosActuales></puntosActuales>
+        </equipo>
+        <equipo id="RM" nombre="Real Madrid">
+            <presupuesto tipo="alto">
+                <cantidad></cantidad>
+            </presupuesto>
+            <puntosActuales></puntosActuales>
+        </equipo>
+    </equipos>
+</informacionLigas>

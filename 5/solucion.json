@@ -1,0 +1,37 @@
+{
+  "nombre": "JSON",
+  "creditos": 20,
+  "fechaInicio": "2018-01-01T00:00:00.000Z",
+  "gratis": true,
+  "precio": 0,
+  "profesorPrincipal": {
+    "nif": "12345678R",
+    "nombre": "Redosindo",
+    "telefonos": {
+      "casa": [
+        "981 111 222"
+      ],
+      "movil": [
+        "666 999 000"
+      ]
+    },
+    "email": [
+      "redosindo@gmail.com",
+      "redosindo@yahoo.es"
+    ],
+    "colaboradores": [
+      {
+        "nombre": "Ana Mirto",
+        "email": [
+          "ana@gmail.com"
+        ]
+      },
+      {
+        "nombre": "Pedro Sanz",
+        "email": [
+          "pedrosanz@geocities.com"
+        ]
+      }
+    ]
+  }
+}

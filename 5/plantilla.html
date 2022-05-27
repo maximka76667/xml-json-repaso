@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio JSON</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="salida" style="text-align:center"></div>
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        var url = "http://localhost/5/solucion.json"; // Origen de los datos JSON
+
+        xmlhttp.onreadystatechange = function () { // Se reciben los datos
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var datos = JSON.parse(xmlhttp.responseText);
+                procesaDatos(datos);
+            }
+        };
+        xmlhttp.open("GET", url, true); // Indicamos tipo de petición, origen de los datos y modo asíncrono
+        xmlhttp.send(); // Enviamos la petición, abrimos el fichero.
+
+        function procesaDatos(datos) { // Aquí es donde se debe personalizar el texto
+            const { nombre, profesorPrincipal: { nombre: nombreProfesor, colaboradores } } = datos;
+            const { nombre: nombrePrimerColaborador } = colaboradores[0];
+
+            document.getElementById("salida").innerHTML = `El curso <strong> ${nombre} </strong> ha sido impartido por <strong> ${nombreProfesor} </strong> y primer colaborador: ${nombrePrimerColaborador}`;
+        }
+    </script>
+</body>
+
+</html>
